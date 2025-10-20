@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courage Patamia — UPSA Hybrid Profile</title>
+
+  <!-- Fonts: Poppins (UI) + Great Vibes (handwritten signature) -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --upsa-blue: #003366;
+      --accent: #004aad;
+      --gold: #c49a2a;
+      --card-bg: #ffffff;
+      --muted:#666;
+    }
+
+    html,body{height:100%;margin:0;background:linear-gradient(135deg,#01162a 0%, #003366 60%);font-family:'Poppins',system-ui,Segoe UI,Arial;color:#222}
+
+    .wrap{
+      max-width:940px;
+      margin:48px auto;
+      padding:34px 44px;
+      background:var(--card-bg);
+      border-radius:14px;
+      box-shadow:0 18px 50px rgba(1,22,42,0.45);
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* decorative */
+    .wrap::before{
+      content:"";
+      position:absolute;
+      right:-120px;
+      top:-120px;
+      width:300px;height:300px;border-radius:50%;
+      background:linear-gradient(180deg,rgba(0,74,173,0.14),rgba(196,154,42,0.06));
+      transform:rotate(20deg);
+    }
+
+    header{display:flex;align-items:center;gap:20px;border-bottom:3px solid var(--accent);padding-bottom:18px;margin-bottom:24px}
+    .logo{
+      width:92px;height:92px;flex:0 0 92px;border-radius:8px;object-fit:contain;background:#fff;padding:6px;box-shadow:0 6px 18px rgba(0,0,0,0.06)
+    }
+    .hero {
+      flex:1;
+    }
+    .hero h1{margin:0;font-size:28px;color:var(--accent);font-weight:600}
+    .hero p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    .profile-pic{
+      width:140px;height:140px;border-radius:14px;object-fit:cover;border:4px solid var(--accent);box-shadow:0 10px 30px rgba(0,0,0,0.12);
+      display:block;margin-left:auto;
+    }
+
+    main{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:18px}
+    @media (max-width:880px){ main{grid-template-columns:1fr; } .profile-pic{margin:20px auto 0; } }
+
+    .card{
+      background:linear-gradient(180deg,#fbfdff,#f4f9ff);
+      padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(2,18,40,0.04)
+    }
+
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .section-title h2{margin:0;font-size:16px;color:var(--accent);padding-left:8px;border-left:4px solid var(--accent);font-weight:600}
+
+    p,li{color:#333;line-height:1.65}
+    ul{margin:8px 0 0 18px;padding:0}
+
+    /* pledge */
+    .pledge{
+      background:#ffffff;padding:20px;border-radius:10px;border-left:6px solid var(--accent);
+      box-shadow:0 4px 12px rgba(0,74,173,0.05);
+    }
+
+    /* signature area */
+    .signature-area{
+      margin-top:18px;text-align:right;
+    }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size:40px;
+      color:#1b2b3a;
+      letter-spacing:0.6px;
+      line-height:1;
+      display:inline-block;
+      transform:translateY(6px);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .sig-meta{font-size:13px;color:var(--muted);margin-top:6px}
+
+    /* right column (contact / quick facts) */
+    .side{
+      display:flex;flex-direction:column;gap:18px;
+    }
+
+    .fact{display:flex;flex-direction:column}
+    .fact strong{color:var(--accent);display:block;margin-bottom:6px}
+    .download-btn{
+      display:inline-block;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#0063d6);color:#fff;text-decoration:none;font-weight:600;
+      box-shadow:0 8px 20px rgba(0,74,173,0.18)
+    }
+
+    footer{margin-top:28px;border-top:1px solid #eef3fb;padding-top:12px;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- UPSA logo — reliable public URL; replace with local file if needed -->
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/0/06/University_of_Professional_Studies%2C_Accra_logo.png" alt="UPSA logo" onerror="this.style.display='none'">
+      <div class="hero">
+        <h1>Courage Patamia</h1>
+        <p>Student • University of Professional Studies, Accra (UPSA) — Hybrid academic × tech-founder profile</p>
+      </div>
+
+      <!-- placeholder profile image: replace with courage.jpg when available -->
+      <img class="profile-pic" src="https://images.unsplash.com/photo-1545996124-0d7d6a65a1b2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7f0f6b3b2ef6a5e9a9f7b5d0a4f9c2a3" alt="Profile photo">
+    </header>
+
+    <main>
+      <div>
+        <div class="card">
+          <div class="section-title"><h2>About Me</h2></div>
+          <p>Hello — I’m <strong>Courage Patamia</strong>, a student at UPSA focused on business systems, digital product design and practical entrepreneurship. I build efficient solutions, learn fast, and execute with an outcome-first mindset.</p>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="card">
+          <div class="section-title"><h2>Education</h2></div>
+          <p>Currently pursuing my degree at the University of Professional Studies, Accra (UPSA). I combine academic studies with hands-on projects in web apps, small-business tooling, and digital payments.</p>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="pledge">
+          <div class="section-title"><h2>Class Integrity & Commitment Pledge</h2></div>
+          <p>I, <strong>Courage Patamia</strong>, pledge to uphold honesty, responsibility, and commitment in all academic and professional activities. I commit to maintaining integrity, respecting deadlines, and ensuring that all work I submit is my own and completed to the best of my ability.</p>
+
+          <div class="signature-area">
+            <!-- stylized digital signature (handwriting font) -->
+            <div class="signature">Courage Patamia</div>
+            <div class="sig-meta"><strong>Signed (digital):</strong> Courage Patamia <br><strong>Date:</strong> 20 October 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="side">
+     
+
+        <div class="card fact">
+          <strong>Hobbies & Interests</strong>
+          <ul>
+            <li>Web & mobile app development</li>
+            <li>Entrepreneurship & product design</li>
+            <li>Music, gaming & reading</li>
+          </ul>
+        </div>
+
+        <div class="card fact">
+          <strong>Contact</strong>
+          <div>Email: <a href="mailto:courage.patamia@upsa.edu.gh">courage.patamia@upsa.edu.gh</a></div>
+         
+        </div>
+      </aside>
+    </main>
+
+    <footer>© 2025 Courage Patamia — University of Professional Studies, Accra</footer>
+  </div>
+</body>
+</html>
